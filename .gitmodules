@@ -1,0 +1,18 @@
+[submodule "qemu"]
+	path = qemu
+	url = https://github.com/qemu/qemu.git
+	branch = work_for_safety
+	fetchRecurseSubmodules = false
+	shallow = true
+
+[submodule "zephyr"]
+	path = zephyr
+	url = https://github.com/zephyrproject-rtos/zephyr.git
+	branch = work_for_safety
+	fetchRecurseSubmodules = false
+	shallow = true
+
+[submodule "app"]
+	path = app
+	url = https://github.com/hpsprger/s32k566_qemu_zephyr_app.git
+	branch = work_for_safety

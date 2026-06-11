@@ -1,0 +1,17 @@
+manifest:
+  version: "0.1"
+
+  remotes:
+    - name: zephyrproject
+      url-base: https://github.com/zephyrproject-rtos
+
+  projects:
+    - name: zephyr
+      remote: zephyrproject
+      repo-path: zephyr
+      revision: main
+      path: zephyr
+      clone-depth: 1
+
+  self:
+    path: app
