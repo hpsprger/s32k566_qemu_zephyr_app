@@ -1,0 +1,2 @@
+# Load Zephyr board Kconfig descriptions.
+osource "/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/boards/nxp/s32k5xxcvb/Kconfig"

@@ -1,0 +1,3 @@
+"hal_nxp":"/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/modules/hal/nxp":"${ZEPHYR_HAL_NXP_CMAKE_DIR}"
+"cmsis":"/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/modules/cmsis":"${ZEPHYR_CMSIS_CMAKE_DIR}"
+"cmsis_6":"/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/modules/cmsis_6":"${ZEPHYR_CMSIS_6_CMAKE_DIR}"

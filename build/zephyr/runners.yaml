@@ -1,0 +1,24 @@
+# Available runners configured by board.cmake.
+runners:
+- trace32
+
+# Default flash runner if --runner is not given.
+flash-runner: trace32
+
+# Default debug runner if --runner is not given.
+debug-runner: trace32
+
+# Common runner configuration values.
+config:
+  board_dir: /home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/boards/nxp/s32k5xxcvb
+  # Build outputs:
+  elf_file: zephyr.elf
+  bin_file: zephyr.bin
+
+# Runner specific arguments
+args:
+  trace32:
+    - --startup-args
+    - elfFile=/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/build/zephyr/zephyr.elf
+    - loadTo=mram
+    - coreType=m7

@@ -1,0 +1,44 @@
+cmake:
+  application:
+    configuration-dir: '/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/app'
+    source-dir: '/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/app'
+  board:
+    name: 's32k5xxcvb'
+    path:
+     - '/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/boards/nxp/s32k5xxcvb'
+    qualifiers: 's32k566/m7'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/dts/bindings'
+    files:
+     - '/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/boards/nxp/s32k5xxcvb/s32k5xxcvb_s32k566_m7.dts'
+    include-dirs:
+     - '/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/modules/hal/nxp/dts'
+     - '/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/include'
+     - '/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/include/zephyr'
+     - '/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/dts/common'
+     - '/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/dts/vendor'
+     - '/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/dts/rx'
+     - '/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/dts/x86'
+     - '/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/dts/xtensa'
+     - '/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/dts/sparc'
+     - '/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/dts/riscv'
+     - '/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/dts/posix'
+     - '/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/dts/arm64'
+     - '/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/dts/arm'
+     - '/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/dts/arc'
+     - '/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/dts'
+  kconfig:
+    files:
+     - '/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/boards/nxp/s32k5xxcvb/s32k5xxcvb_s32k566_m7_defconfig'
+     - '/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/app/prj.conf'
+    user-files:
+     - '/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/app/prj.conf'
+  toolchain:
+    name: 'cross-compile'
+    path: ''
+  zephyr:
+    version: '4.4.99'
+    zephyr-base: '/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr'
+version: '0.1.0'

@@ -1,0 +1,4 @@
+set(kconfig_env_dirs)
+list(APPEND kconfig_env_dirs ZEPHYR_HAL_NXP_MODULE_DIR=/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/modules/hal/nxp)
+list(APPEND kconfig_env_dirs ZEPHYR_CMSIS_MODULE_DIR=/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/modules/cmsis)
+list(APPEND kconfig_env_dirs ZEPHYR_CMSIS_6_MODULE_DIR=/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/modules/cmsis_6)

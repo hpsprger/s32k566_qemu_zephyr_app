@@ -1,0 +1,26 @@
+empty_file.o: \
+ /home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/misc/empty_file.c \
+ /home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/boards/nxp/s32k5xxcvb/s32k5xxcvb_s32k566_m7.dts \
+ /home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/dts/arm/nxp/s32/nxp_s32k566_m7.dtsi \
+ /home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/dts/arm/armv7-m.dtsi \
+ /home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/dts/common/skeleton.dtsi \
+ /home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/dts/arm/nxp/s32/nxp_s32k566.dtsi \
+ /home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/dts/common/mem.h \
+ /home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/include/zephyr/dt-bindings/clock/nxp_s32k566_clock.h \
+ /home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/dts/common/freq.h \
+ /home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/boards/nxp/s32k5xxcvb/s32k5xxcvb_s32k566.dtsi \
+ /home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/include/zephyr/dt-bindings/gpio/gpio.h \
+ /home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/include/zephyr/dt-bindings/input/input-event-codes.h \
+ /home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/boards/nxp/s32k5xxcvb/s32k5xxcvb_s32k566-pinctrl.dtsi \
+ /home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/modules/hal/nxp/dts/nxp/s32/S32K56X-437BGA-pinctrl.h \
+ /home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/include/zephyr/dt-bindings/pinctrl/nxp-siul2-pinctrl.h \
+ /home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/include/zephyr/dt-bindings/dt-util.h \
+ /home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/include/zephyr/sys/util_macro.h \
+ /home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/include/zephyr/sys/util_internal.h \
+ /home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/include/zephyr/sys/util_loops.h \
+ /home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/include/zephyr/sys/util_listify.h \
+ /home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/include/zephyr/sys/util_internal_is_eq.h \
+ /home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/include/zephyr/sys/util_internal_util_inc.h \
+ /home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/include/zephyr/sys/util_internal_util_dec.h \
+ /home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/include/zephyr/sys/util_internal_util_x2.h \
+ /home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/zephyr/include/zephyr/dt-bindings/xspi/nxp-s32-xspi.h

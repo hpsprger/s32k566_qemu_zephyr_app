@@ -1,0 +1,21 @@
+menu "hal_nxp (/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/modules/hal/nxp)"
+osource "$(ZEPHYR_HAL_NXP_KCONFIG)"
+config ZEPHYR_HAL_NXP_MODULE
+	bool
+	default y
+
+config ZEPHYR_HAL_NXP_MODULE_BLOBS
+	bool
+endmenu
+menu "cmsis (/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/modules/cmsis)"
+osource "$(ZEPHYR_CMSIS_KCONFIG)"
+config ZEPHYR_CMSIS_MODULE
+	bool
+	default y
+endmenu
+menu "cmsis_6 (/home/big_cap_disk/openclaw_code/s32k566_qemu_zephyr_app/modules/cmsis_6)"
+osource "$(ZEPHYR_CMSIS_6_KCONFIG)"
+config ZEPHYR_CMSIS_6_MODULE
+	bool
+	default y
+endmenu
