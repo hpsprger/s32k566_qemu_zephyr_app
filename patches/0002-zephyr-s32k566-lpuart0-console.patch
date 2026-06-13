@@ -1,0 +1,60 @@
+From 98cbe83c3a95a4c0806ca8fbcf4d46079f5e67c6 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?=E5=85=8B=E5=8A=B3=E5=BE=B7?= <claude@local.dev>
+Date: Sat, 13 Jun 2026 09:36:07 +0800
+Subject: [PATCH] boards: nxp: s32k566: enable LPUART0 console
+
+---
+ boards/nxp/s32k5xxcvb/s32k5xxcvb_s32k566-pinctrl.dtsi | 8 ++++++++
+ boards/nxp/s32k5xxcvb/s32k5xxcvb_s32k566.dtsi         | 7 +++++++
+ boards/nxp/s32k5xxcvb/s32k5xxcvb_s32k566_m7.dts       | 2 ++
+ 3 files changed, 17 insertions(+)
+
+diff --git a/boards/nxp/s32k5xxcvb/s32k5xxcvb_s32k566-pinctrl.dtsi b/boards/nxp/s32k5xxcvb/s32k5xxcvb_s32k566-pinctrl.dtsi
+index 39b63de69..40e0f0623 100644
+--- a/boards/nxp/s32k5xxcvb/s32k5xxcvb_s32k566-pinctrl.dtsi
++++ b/boards/nxp/s32k5xxcvb/s32k5xxcvb_s32k566-pinctrl.dtsi
+@@ -7,6 +7,14 @@
+ #include <nxp/s32/S32K56X-437BGA-pinctrl.h>
+ 
+ &pinctrl {
++	lpuart0_default: lpuart0_default {
++		group1 {
++			pinmux = <PA1_LPUART0_TX_O>, <PB6_LPUART0_RX>;
++			output-enable;
++			input-enable;
++		};
++	};
++
+ 	eirq1_default: eirq1_default {
+ 		group1 {
+ 			pinmux = <PF3_SIUL1_EIRQ3>, <PF9_SIUL1_EIRQ9>;
+diff --git a/boards/nxp/s32k5xxcvb/s32k5xxcvb_s32k566.dtsi b/boards/nxp/s32k5xxcvb/s32k5xxcvb_s32k566.dtsi
+index 5591cf736..0cfcb2666 100644
+--- a/boards/nxp/s32k5xxcvb/s32k5xxcvb_s32k566.dtsi
++++ b/boards/nxp/s32k5xxcvb/s32k5xxcvb_s32k566.dtsi
+@@ -175,3 +175,10 @@
+ &edma {
+ 	status = "okay";
+ };
++
++&lpuart0 {
++	status = "okay";
++	current-speed = <115200>;
++	pinctrl-0 = <&lpuart0_default>;
++	pinctrl-names = "default";
++};
+diff --git a/boards/nxp/s32k5xxcvb/s32k5xxcvb_s32k566_m7.dts b/boards/nxp/s32k5xxcvb/s32k5xxcvb_s32k566_m7.dts
+index ce4e48a2d..efa9e8409 100644
+--- a/boards/nxp/s32k5xxcvb/s32k5xxcvb_s32k566_m7.dts
++++ b/boards/nxp/s32k5xxcvb/s32k5xxcvb_s32k566_m7.dts
+@@ -16,5 +16,7 @@
+ 	chosen {
+ 		zephyr,sram = &sram0;
+ 		zephyr,flash = &cmram;
++		zephyr,console = &lpuart0;
++		zephyr,shell-uart = &lpuart0;
+ 	};
+ };
+-- 
+2.53.0
+
